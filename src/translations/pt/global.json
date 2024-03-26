@@ -1,0 +1,151 @@
+{
+  "navBar": {
+    "language": "Português",
+    "home": "Home",
+    "sp": "Planejamento Estratégico",
+    "who": "Quem Somos",
+    "portfolio": {
+      "title": "Nosso Portfólio ",
+      "topic1": "Gestão de Funcionários",
+      "topic2": "Gestão e controle de caixa",
+      "topic3": "Manutenção residencial",
+      "topic4": "Planejamento de viagens",
+      "topic5": "Transporte VIP",
+      "topic6": "Contratação de equipe de segurança pessoal",
+      "topic7": "Contratação e gestão de Personal Organizer",
+      "topic8": "Serviços cartorários em domicílio",
+      "topic9": "Serviços de despachante",
+      "topic10": "Cotação e emissão de seguros",
+      "topic11": "Outros"
+    },
+    "how": "Como Atuamos",
+    "contact": "Contato"
+  },
+
+  "home": {
+    "title": "Unique Concierge",
+    "desc": "Viva melhor"
+  },
+
+  "PE": {
+    "title": "Planejamento Estratégico",
+    "desc": "",
+    "missao": {
+      "title": "Missão",
+      "desc": "Proporcionar qualidade de vida aos nossos clientes"
+    },
+    "visao": {
+      "title": "Visão",
+      "desc": "Ser a empresa referência de mercado no segmento de gerenciamento de qualidade de vida"
+    },
+    "valores": {
+      "title": "Valores",
+      "desc": "Ética, Transparência, Proatividade, Discrição, Responsabilidade",
+      "desc1": "Ética",
+      "desc2": "Transparência",
+      "desc3": "Proatividade",
+      "desc4": "Discrição",
+      "desc5": "Responsabilidade"
+  }
+},
+
+  "portfolio": {
+    "title": "Nosso Portfólio",
+    "desc": "Conheça nossos serviços exclusivos e personalizados, cuidadosamente elaborados para atender às suas necessidades com excelência",
+    "menu": "Áreas de atuação",
+
+    "slide": {
+      "1": {
+        "title": "Gestão de funcionários",
+        "topic1": "Recursos Humanos",
+        "topic2": "Departamento Pessoal",
+        "topic3": "Recrutamento e seleção"
+      },
+      "2": {
+        "title": "Gestão e controle de caixa",
+        "topic1": "Pagamento de contas",
+        "topic2": "Coordenação e lançamento de entradas e saídas de caixa",
+        "topic3": "Projeção de fluxo de caixa",
+        "topic4": "Conciliação de conta bancária",
+        "topic5": "Emissão de relatório gerencial mensal"
+      },
+      "3": {
+        "title": "Manutenção residencial",
+        "topic1": "Contratação e gestão de serviços de reparos em geral",
+        "topic2": "Contratação e gestão de serviços de alarme e monitoramento",
+        "topic3": "Contratação de assistência técnica para eletro eletrônicos",
+        "topic4": "Contratação e gestão de prestadores de serviços específicos "
+      },
+      "4": {
+        "title": "Planejamento de viagens",
+        "topic1": "Emissão de bilhetes aéreos, ferroviários e marítimos",
+        "topic2": "Seguro Viagem",
+        "topic3": "Sugestão de roteiros",
+        "topic4": "Reserva de restaurantes no exterior",
+        "topic5": "Agendamento de passeios",
+        "topic6": "Agendamento de transfer ",
+        "topic7": "Aluguel de carro"
+      },
+      "5": {
+        "title": "Transporte VIP",
+        "topic1": "Contratamos os melhores motoristas e carros para o seu conforto e segurança"
+      },
+      "6": {
+        "title": "Contratação de equipe de segurança pessoal",
+        "topic1": ""
+      },
+      "7": {
+        "title": "Contratação e gestão de Personal Organizer",
+        "topic1": "Organização e otimização de espaços"
+      },
+      "8": {
+        "title": "Serviços cartorários em domicílio",
+        "topic1": "Otimize seu tempo! Para que ir ao cartório, se a Unique Concierge traz o cartório até você"
+      },
+      "9": {
+        "title": "Serviços de despachante",
+        "topic1": "Emissão de documentos para viagem (passaporte e vistos)",
+        "topic2": "Emissão de documentos pessoais (RG, CNH, outros)"
+      },
+      "10": {
+        "title": "Cotação e emissão de seguros",
+        "topic1": "Seguro de Vida",
+        "topic2": "Seguro Viagem",
+        "topic3": "Seguro Saúde",
+        "topic4": "Seguro Residencial",
+        "topic5": "Seguro Veicular"
+      },
+      "11": {
+        "title": "Outros",
+        "topic1": "Inclusão, alteração e registro de titular com concessionárias",
+        "topic2": "Cadastro e compras em sites",
+        "topic3": "Abastecimento residencial mensal "
+      }
+    }
+  },
+
+  "quem": {
+    "title": "Quem Somos",
+    "desc": "Somos uma empresa familiar, que tem como objetivo proporcionar qualidade de vida aos nossos clientes e suas famílias, gerenciando as diversas demandas do dia-a-dia."
+  },
+
+  "como": {
+    "title": "Como Atuamos",
+    "desc": "Como cliente da Unique Concierge, você irá usufruir de um serviço personalizado, garantindo exclusividade em cada detalhe. Os nossos clientes têm acesso à profissionais experientes no segmento e a um conjunto completo de serviços customizados e adaptados às suas necessidades."
+  },
+
+  "contato": {
+    "title": "Contato",
+    "telefone": "Telefone",
+    "wpp": "Whatsapp",
+    "email": "E-mail",
+    "unique": {
+      "tel": "(21) 97678-7740",
+      "email": "contato@uniqueconcierge.com.br"
+    }
+  },
+
+  "footer": {
+    "copyright": " todos os direitos reservados. 2024"
+  }
+}
