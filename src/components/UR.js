@@ -1,42 +1,58 @@
 import styles from './UR.module.css'
 import {useTranslation} from "react-i18next"
 import {Link} from 'react-scroll'
-import diamond from "../assets/img/diamond.png";
-import chess from '../assets/img/chess.png'
+import other from '../assets/img/other.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDown} from "@fortawesome/free-solid-svg-icons";
+import {useEffect, useState} from "react";
+import gray from "../assets/img/gray.png"
 
 function UR(){
     const [t, i18n] = useTranslation("global");
 
+    const [slideIndex, setSlideIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            showSlides();
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, [slideIndex]);
+
+    const showSlides = () => {
+        setSlideIndex((prevIndex) => {
+            if (prevIndex === 2) {
+                return 0;
+            } else {
+                return prevIndex + 1;
+            }
+        });
+    };
+
     return (
         <section id='UR' className={styles.ur}>
-            <img className={styles.icon} src={chess} alt="chess"/>
+            <img className={styles.icon} src={other} alt="other"/>
             <h1 className={styles.pageTitle} style={{cursor:"auto"}}>{t("UR.title")}</h1>
             <div className={styles.container}>
-                <div className={styles.item} >
-                    <h1 id="mission" className={styles.pageTitleActive}>{t("UR.missao.title")}</h1>
-                    <div className={styles.pageTopic}>
-                        <h2>{t("UR.missao.desc")}</h2>
-                    </div>
+                <div className={styles.urContainer}>
+                    <img src={gray} className={styles.urImage} alt="Opção 1"/>
                 </div>
-                <div className={styles.item} >
-                    <h1 id="vision" className={styles.pageTitle}>{t("UR.visao.title")}</h1>
-                    <div className={styles.pageTopic}>
-                        <h2>{t("UR.visao.desc")}</h2>
-                    </div>
+                <div className={styles.urContainer}>
+                    <img src={gray} className={styles.urImage} alt="Opção 2"/>
                 </div>
-                <div className={styles.item}>
-                    <h1 id="values" className={styles.pageTitle}>{t("UR.valores.title")}</h1>
-                    <div className={styles.pageTopic}>
-                        <h2>{t("UR.valores.desc")}</h2>
-                    </div>
+                <div className={styles.urContainer}>
+                    <img src={gray} className={styles.urImage} alt="Opção 3"/>
+                </div>
+                <div className={styles.urContainer}>
+                    <img src={gray} className={styles.urImage} alt="Opção 4"/>
+                </div>
+                <div className={styles.urContainer}>
+                    <img src={gray} className={styles.urImage} alt="Opção 4"/>
                 </div>
             </div>
-            <h2 id="missionDesc" className={styles.descriptionActive}>{t("UR.missao.desc")}</h2>
-            <h2 id="visionDesc" className={styles.description}>{t("UR.visao.desc")}</h2>
-            <h2 id="valuesDesc" className={styles.description}>{t("UR.valores.desc")}</h2>
-            <Link to ="quem" spy={true} smooth={true} offset={0} duration={1000} className={styles.containerArrowDown}>
+
+            <Link to="NU" spy={true} smooth={true} offset={0} duration={1000} className={styles.containerArrowDown}>
                 <FontAwesomeIcon icon={faAngleDown} className={styles.arrowDown}/>
             </Link>
         </section>

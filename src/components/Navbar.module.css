@@ -206,7 +206,7 @@ ul{
 
 
 
-@media screen and (max-width:1290px) {
+@media screen and (max-width:1130px) {
     .header .navMenu {
         display: none;
     }
@@ -244,7 +244,7 @@ ul{
     .hamburger {
         display: block;
         margin-top: 10px;
-        color: #E4C576 !important;
+            color: #E4C576 !important;
         width: 40px;
         height: 50px;
         transform: rotateY(180deg)

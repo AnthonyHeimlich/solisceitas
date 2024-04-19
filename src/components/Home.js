@@ -13,9 +13,9 @@ function Home(){
             <div className={styles.overlay}></div>
             <video className={styles.bg} src={foodBg} autoPlay loop muted playsInline/>
             <div className={styles.content}>
-                {/* <h1 className={styles.pageTitle}>{t("home.title")}</h1>
-                <h2 className={styles.pageDescription}>{t("home.desc")}</h2> */}
-                <Link to ="PE" spy={true} smooth={true} offset={0} duration={1000} className={styles.containerArrowDown}>
+
+                <h2 className={styles.pageDescription}>{t("home.desc")}</h2>
+                <Link to ="UR" spy={true} smooth={true} offset={0} duration={1000} className={styles.containerArrowDown}>
                    <FontAwesomeIcon icon={faAngleDown} className={styles.arrowDown}/>
                 </Link>
             </div>

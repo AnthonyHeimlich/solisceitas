@@ -1,7 +1,8 @@
 import styles from './Footer.module.css'
 import {useTranslation} from "react-i18next"
 import {Link} from 'react-scroll'
-import logo from "../assets/img/logoGoldenTransparent.png"
+import logo from "../assets/img/brasil2.png"
+import react from "react";
 
 function Footer(){
     const [t, i18n] = useTranslation("global");
@@ -20,25 +21,19 @@ function Footer(){
                                 <Link to ="home" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.home")}</Link>
                             </li>
                             <li>
-                                <Link to ="PE" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.sp")}</Link>
+                                <Link to ="UR" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.UR")}</Link>
                             </li>
                             <li>
-                                <Link to ="quem" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.who")}</Link>
+                                <Link to ="NU" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.NU")}</Link>
                             </li>
                             <li>
-                                <Link to ="portfolio" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.portfolio.title")}</Link>
-                            </li>
-                            <li>
-                                <Link to ="como" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.how")}</Link>
-                            </li>
-                            <li>
-                                <Link to ="contato" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.contact")}</Link>
+                                <Link to ="perfil" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.perfil")}</Link>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <p className={styles.copyright}>
-                            <a href="http://uniqueconcierge.com.br">Unique Concierge</a>,{t("footer.copyright")} &copy; </p>
+                            <a href="">SolisCeitas</a>,{t("footer.copyright")} &copy; </p>
                     </div>
                 </div>
             </div>

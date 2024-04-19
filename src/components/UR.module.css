@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 
@@ -58,11 +58,30 @@
 }
 
 .container{
-    margin-top: 40px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 90%;
 }
+
+.urContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.urImage{
+    width:200px;
+    height:200px;
+    margin-bottom: 30px;
+}
+
 
 .item{
     min-width: 33%;
