@@ -36,19 +36,24 @@ function UR(){
             <h1 className={styles.pageTitle} style={{cursor:"auto"}}>{t("UR.title")}</h1>
             <div className={styles.container}>
                 <div className={styles.urContainer}>
-                    <img src={gray} className={styles.urImage} alt="Opção 1"/>
+                    <img src={gray} className={styles.urImage} alt="Receita 1"/>
+                    <h3>Receita 1</h3>
                 </div>
                 <div className={styles.urContainer}>
-                    <img src={gray} className={styles.urImage} alt="Opção 2"/>
+                    <img src={gray} className={styles.urImage} alt="Receita 2"/>
+                    <h3>Receita 2</h3>
                 </div>
                 <div className={styles.urContainer}>
-                    <img src={gray} className={styles.urImage} alt="Opção 3"/>
+                    <img src={gray} className={styles.urImage} alt="Receita 3"/>
+                    <h3>Receita 3</h3>
                 </div>
                 <div className={styles.urContainer}>
-                    <img src={gray} className={styles.urImage} alt="Opção 4"/>
+                    <img src={gray} className={styles.urImage} alt="Receita 4"/>
+                    <h3>Receita 4</h3>
                 </div>
                 <div className={styles.urContainer}>
-                    <img src={gray} className={styles.urImage} alt="Opção 4"/>
+                    <img src={gray} className={styles.urImage} alt="Receita 5"/>
+                    <h3>Receita 5</h3>
                 </div>
             </div>
 
