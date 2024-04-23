@@ -20,6 +20,20 @@
     "title": "Nossos Utensílios"
   },
 
+  "Perfil": {
+    "title": "Perfil"
+  },
+
+  "Login": {
+    "title": "Login",
+    "desc": "Faça seu Login"
+  },
+
+  "Cadastro": {
+    "title": "Cadastro",
+    "desc": "Faça seu Cadastro"
+  },
+
   "footer": {
     "copyright": " todos os direitos reservados. 2024"
   }

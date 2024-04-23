@@ -14,6 +14,9 @@ import logo from "../assets/img/brasil2.png"
 function Navbar(){
     const [t, i18n] = useTranslation("global");
 
+    const currentUrl = window.location.pathname;
+    const isHome = currentUrl === '/';
+
     const handleChangeLanguage = (lang: string) =>{
         i18n.changeLanguage(lang);
         setOpenLanguages(false);
@@ -59,23 +62,23 @@ function Navbar(){
                     {click ? (<FaTimes size={40} style={{display:"none" }} />) : (<BiMenuAltRight size={40} style={{ color: '#E4C576'}}/>)}
                 </div>
                 <div className={styles.container}>
-                    <a href="" className={styles.logo}>
+                    <a href="/" className={styles.logo}>
                         <img src={logo} alt='logo'/>
                     </a>
                 </div>
                 <ul className={styles.navMenu}>
                     <li className={styles.navItem}>
-                        <Link to ="home" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.home")}</Link>
+                        <LinkRouter to ="/">{t("navBar.home")}</LinkRouter>
                     </li>
-                    <li className={styles.navItem}>
+                    {isHome &&  <li className={styles.navItem}>
                         <Link to ="UR" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.UR")}</Link>
-                    </li>
-                    <li className={styles.navItem}>
+                    </li>}
+                    {isHome &&  <li className={styles.navItem}>
                         <Link to ="NU" spy={true} smooth={true} offset={0} duration={1000}>{t("navBar.NU")}</Link>
-                    </li>
-                    <li className={styles.navItem}>
-                        <LinkRouter to ="/ur">{t("navBar.perfil")}</LinkRouter>
-                    </li>
+                    </li>}
+                    {isHome &&  <li className={styles.navItem}>
+                        <LinkRouter to ="/perfil">{t("navBar.perfil")}</LinkRouter>
+                    </li>}
 
                     <div className={styles.dropdown} ref={languagesRef} >
                         <div className={styles.select} onClick={() => setOpenLanguages((prev) => !prev) }>
@@ -104,15 +107,15 @@ function Navbar(){
                     <li className={styles.navItem}>
                         <Link to ="home" spy={true} smooth={true} offset={0} duration={1000} onClick={closeMenu}>{t("navBar.home")}</Link>
                     </li>
-                    <li className={styles.navItem}>
+                    {isHome &&  <li className={styles.navItem}>
                         <Link to ="UR" spy={true} smooth={true} offset={0} duration={1000} onClick={closeMenu}>{t("navBar.UR")}</Link>
-                    </li>
-                    <li className={styles.navItem}>
+                    </li>}
+                    {isHome &&  <li className={styles.navItem}>
                         <Link to ="NU" spy={true} smooth={true} offset={0} duration={1000} onClick={closeMenu}>{t("navBar.NU")}</Link>
-                    </li>
-                    <li className={styles.navItem}>
+                    </li>}
+                    {isHome &&  <li className={styles.navItem}>
                         <Link to ="perfil" spy={true} smooth={true} offset={0} duration={1000} onClick={closeMenu}>{t("navBar.perfil")}</Link>
-                    </li>
+                    </li>}
                 </ul>
             </nav>
         </div>
